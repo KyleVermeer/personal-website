@@ -11,12 +11,14 @@
     "node": "0.10.x"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/KyleVermeer/personal-website"
+    "type": "git",
+    "url": "https://github.com/KyleVermeer/personal-website"
   },
   "author": "kylevermeer@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.10.6"
+    "ejs": "^1.0.0",
+    "express": "^4.10.6",
+    "less": "^2.1.1"
   }
 }
