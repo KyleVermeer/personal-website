@@ -5,7 +5,7 @@ header {
   background-color: #121212;
   height: 67px;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 footer {
   height: 100px;
@@ -20,6 +20,9 @@ a {
   background-color: #1c1c1c;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
+}
+div.all-content {
+  font-family: Lato, sans-seriff;
 }
 nav {
   text-align: center;

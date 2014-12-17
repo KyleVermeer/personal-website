@@ -1,4 +1,7 @@
 module.exports.index = function(req, res) {
-    console.log("Controller received this message");
     res.render('index', { title: 'KV' } );
+}
+
+module.exports.contact = function(req, res) {
+    res.render('contact', { title: 'Contact Me'} );
 }

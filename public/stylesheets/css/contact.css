@@ -1,0 +1,16 @@
+span.contact-social-media {
+  display: block;
+  color: #00aef0;
+  font-size: 25px;
+  font-weight: 300;
+}
+span.contact-email {
+  display: block;
+  margin-top: 50px;
+  color: #888888;
+  font-weight: 300;
+}
+div.contact-info {
+  padding-left: 50px;
+  padding-top: 100px;
+}
