@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+/* Globals */
+/* /Globals */
+header {
+  background-color: #121212;
+  height: 67px;
+  width: 100%;
+  color: #FFFFFF;
+}
+footer {
+  height: 100px;
+  background-color: #121212;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+#main-content {
+  height: 650px;
+  background-color: #1c1c1c;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+nav {
+  text-align: center;
+}
+nav > ul {
+  display: inline-block;
+}
+nav li {
+  height: 67px;
+  line-height: 67px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Lato, sans-seriff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+}
+nav li:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+nav li > a {
+  color: #ffffff;
+}
+div.main-content-panel {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+div.name {
+  margin-top: 150px;
+  font-family: Lato, sans-seriff;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 60px;
+}
+span.first-name {
+  display: block;
+  clear: both;
+  color: #eeeeee;
+}
+span.last-name {
+  display: block;
+  clear: both;
+  color: #00aef0;
+}
+.title {
+  margin-top: 50px;
+  font-size: 33px;
+  font-family: Lato, sans-seriff;
+  font-weight: 300;
+  color: #888888;
+  line-height: 36px;
+}
+.title > span.title-line {
+  display: block;
+  clear: both;
+}
+.right-panel-contents {
+  margin-left: 30px;
+}
+.all-content {
+  min-width: 900px;
+}
+footer {
+  padding-top: 20px;
+}
+#social-media-links {
+  display: block;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
+div#signature {
+  width: 150px;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #888888;
+  font-family: Lato, sans-seriff;
+}
+div#signature > span.name {
+  display: inline-block;
+  float: left;
+}
+div#signature > span.year {
+  display: inline-block;
+  float: right;
+}
