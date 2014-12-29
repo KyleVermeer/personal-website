@@ -102,14 +102,13 @@ div.main-content-panel {
 @name-line-height: @name-font-size + 5;
 
 div.name {
-    margin-top: 150px;
     font-family: @name-font-family;
     font-weight: @name-font-weight;
     font-size: @name-font-size;
     line-height: @name-line-height;
 }
 
-@first-name-color: #EEEEEE;
+@first-name-color: #FFFFFF;
 
 span.first-name {
     display: block;
@@ -129,7 +128,7 @@ span.last-name {
 @title-font-family: @page-font-family;
 @title-font-size: @name-font-size * (3/5);
 @title-line-height: @title-font-size + 3;
-@title-font-color: #888888;
+@title-font-color: #CCCCCC;
 @title-font-weight: 300;
 
 .title {
@@ -147,10 +146,25 @@ span.last-name {
 }
 
 
-@right-panel-contents-margin-left: 30px;
+@panel-contents-margin-right: 75px;
+@panel-contents-background-color: rgba(0,0,0,0.6);
+@panel-contents-padding: 20px;
 
-.right-panel-contents {
-    margin-left: @right-panel-contents-margin-left;
+#panel-contents {
+    margin-top: @name-margin-top;
+    margin-right: @panel-contents-margin-right;
+    padding: @panel-contents-padding;
+    background-color: @panel-contents-background-color;
+    display: inline-block;
+    float: right;
+    transition: background-color .8s;
+}
+
+@panel-contents-hover-background-color: rgba(0,0,0,0.9);
+
+#panel-contents:hover {
+    background-color: @panel-contents-hover-background-color;
+    cursor: pointer;
 }
 
 @all-content-min-width: 900px;
@@ -197,4 +211,13 @@ div#signature > span.name {
 div#signature > span.year {
     display: inline-block;
     float: right;
+}
+
+div.main-contents {
+    background-image: url('/images/KVWebsite.jpg');
+    background-size: cover;
+}
+
+.space-holder {
+    clear:both;
 }
