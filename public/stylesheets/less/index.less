@@ -18,13 +18,14 @@ header {
 @footer-height: 100px;
 
 footer {
-    height: @footer-height;
+    min-height: @footer-height;
     background-color: @black;
     width: 100%;
 }
 
 html, body {
     height: 100%;
+    background-color: @black;
 }
 
 a {
@@ -38,14 +39,17 @@ a {
 @main-content-border-color: #333333;
 
 #main-content {
-    height: @main-content-height;
+    min-height: @main-content-height;
     background-color: @main-content-background-color;
     border-top: 1px solid @main-content-border-color;
     border-bottom: 1px solid @main-content-border-color;
 }
 
+@all-content-min-width: 900px;
+
 div.all-content {
     font-family: @page-font-family;
+    min-width: @all-content-min-width;
 }
 
 @nav-height: @header-height;
@@ -167,12 +171,6 @@ span.last-name {
     cursor: pointer;
 }
 
-@all-content-min-width: 900px;
-
-.all-content {
-    min-width: @all-content-min-width;
-}
-
 @footer-padding-top: 20px;
 
 footer {
@@ -216,6 +214,8 @@ div#signature > span.year {
 div.main-contents {
     background-image: url('/images/KVWebsite.jpg');
     background-size: cover;
+    min-height: @main-content-height;
+    width: 100%;
 }
 
 .space-holder {
