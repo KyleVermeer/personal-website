@@ -12,8 +12,14 @@ footer {
   background-color: #121212;
   width: 100%;
 }
+html,
+body {
+  height: 100%;
+}
 a {
   text-decoration: none;
+  height: 100%;
+  weight: 100%;
 }
 #main-content {
   height: 650px;

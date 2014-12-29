@@ -1,0 +1,71 @@
+@aboutMe-padding-sides: 50px;
+@aboutMe-padding-top: 100px;
+
+div.about-me {
+    padding-left: @aboutMe-padding-sides;
+    padding-right: @aboutMe-padding-sides;
+    padding-top: @aboutMe-padding-top;
+}
+
+@intro-line-media-font-color: #00aef0;
+@intro-line-media-font-size: 25px;
+@intro-line-font-weight: 300;
+@intro-line-line-height: 35px;
+
+span.intro-line {
+    color: @intro-line-media-font-color;
+    font-size: @intro-line-media-font-size;
+    font-weight: @intro-line-font-weight;
+    line-height: @intro-line-line-height;
+}
+
+@tech-skills-margin-top: 50px;
+
+div.tech-skills {
+    margin-top: @tech-skills-margin-top;
+}
+
+@tech-skills-span-font-color: #888888;
+@tech-skills-span-font-size: 22px;
+@tech-skills-span-font-weight: @intro-line-font-weight;
+@tech-skills-label-padding-bottom: 20px;
+
+div.tech-skills > span {
+    color: @tech-skills-span-font-color;
+    font-weight: @tech-skills-span-font-weight;
+    font-size: @tech-skills-span-font-size;
+    display: block;
+    padding-bottom: @tech-skills-label-padding-bottom;
+}
+
+@skills-list-font-color: #00aef0;
+@skills-list-margin-left: 50px;
+@skills-list-width: 400px;
+
+div.tech-skills > ul.skills-list {
+    margin-left: @skills-list-margin-left;
+    width: @skills-list-width;
+    float: left;
+}
+
+div.tech-skills > ul.skills-list > li {
+    color: @skills-list-font-color;
+    font-size: @tech-skills-span-font-size;
+    font-weight: @tech-skills-span-font-weight;
+    line-height: @tech-skills-span-font-size + 5px;
+}
+
+@skills-list-font-color-hover: #008ed0;
+div.tech-skills > ul.skills-list > li:hover {
+    color: @skills-list-font-color-hover;
+    cursor: pointer;
+}
+
+pre#skill-example {
+    float:left;
+    color: #FFFFFF;
+}
+
+.space-holder {
+    clear:both;
+}

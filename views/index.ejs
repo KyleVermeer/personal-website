@@ -1,64 +1,15 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title><%= title %></title>
-        <link rel="stylesheet" type="text/css" href="stylesheets/css/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/css/index.css"/>
-    </head>
-
-    <body>
-        <div class="all-content">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/">PROJECTS</a></li>
-                        <li><a href="http://kylevermeer.wordpress.com/">BLOG</a></li>
-                        <li><a href="/">ABOUT ME</a></li>
-                        <li><a href="/contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div id="main-content">
-                <div class="main-content-panel">
-                </div>
-                <div class="main-content-panel">
-                    <div class="right-panel-contents">
-                        <div class="name">
-                            <span class="first-name">KYLE</span>
-                            <span class="last-name">VERMEER</span>
-                        </div>
-                        <div class="title">
-                            <span class="title-line">software</span>
-                            <span class="title-line">engineer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <footer>
-                <div id="social-media-links">
-                    <a href="https://www.linkedin.com/pub/kyle-vermeer/35/3b9/210/">
-                        <img src="images/linkedinLogo48.png" width="48" height="48"/>
-                    </a>
-                    <a href="https://www.facebook.com/kylevermeer">
-                        <img src="images/facebookLogo48.png" width="48" height="48"/>
-                    </a>
-                    <a href="https://twitter.com/KyleV35">
-                        <img src="images/twitterLogo48.png" width="48" height="48"/>
-                    </a>
-                </div>
-                <div id="signature">
-                    <span class="name">
-                        Kyle Vermeer
-                    </span>
-                    <span class="year">
-                        &copy; 2014
-                    </span>
-                </div>
-            </footer>
+<%- contentFor('body') %>
+<div class="main-content-panel">
+</div>
+<div class="main-content-panel">
+    <div class="right-panel-contents">
+        <div class="name">
+            <span class="first-name">KYLE</span>
+            <span class="last-name">VERMEER</span>
         </div>
-    </body>
-
-</html>
+        <div class="title">
+            <span class="title-line">software</span>
+            <span class="title-line">engineer</span>
+        </div>
+    </div>
+</div>

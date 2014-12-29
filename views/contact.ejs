@@ -1,59 +1,12 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title><%= title %></title>
-        <link rel="stylesheet" type="text/css" href="stylesheets/css/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/css/index.css"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/css/contact.css"/>
-    </head>
+<%- contentFor('head') %>
+<link rel="stylesheet" type="text/css" href="stylesheets/css/contact.css"/>
 
-    <body>
-        <div class="all-content">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/">PROJECTS</a></li>
-                        <li><a href="http://kylevermeer.wordpress.com/">BLOG</a></li>
-                        <li><a href="/">ABOUT ME</a></li>
-                        <li><a href="/contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div id="main-content">
-                <div class="contact-info">
-                    <span class="contact-social-media">
-                        Please feel free to reach out to me via any of the social media links below.
-                    </span>
-                    <span class="contact-email">
-                        You may also e-mail me at kylevermeer at gmail dot com.
-                    </span>
-                </div>
-            </div>
-
-            <footer>
-                <div id="social-media-links">
-                    <a href="https://www.linkedin.com/pub/kyle-vermeer/35/3b9/210/">
-                        <img src="images/linkedinLogo48.png" width="48" height="48"/>
-                    </a>
-                    <a href="https://www.facebook.com/kylevermeer">
-                        <img src="images/facebookLogo48.png" width="48" height="48"/>
-                    </a>
-                    <a href="https://twitter.com/KyleV35">
-                        <img src="images/twitterLogo48.png" width="48" height="48"/>
-                    </a>
-                </div>
-                <div id="signature">
-                    <span class="name">
-                        Kyle Vermeer
-                    </span>
-                    <span class="year">
-                        &copy; 2014
-                    </span>
-                </div>
-            </footer>
-        </div>
-    </body>
-
-</html>
+<%- contentFor('body') %>
+<div class="contact-info">
+    <span class="contact-social-media">
+        Please feel free to reach out to me via any of the social media links below.
+    </span>
+    <span class="contact-email">
+        You may also e-mail me at kylevermeer at gmail dot com.
+    </span>
+</div>
