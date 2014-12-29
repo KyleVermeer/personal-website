@@ -1,0 +1,43 @@
+div.about-me {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+}
+span.intro-line {
+  color: #00aef0;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 35px;
+}
+div.tech-skills {
+  margin-top: 50px;
+}
+div.tech-skills > span {
+  color: #888888;
+  font-weight: 300;
+  font-size: 22px;
+  display: block;
+  padding-bottom: 20px;
+}
+div.tech-skills > ul.skills-list {
+  margin-left: 50px;
+  width: 400px;
+  float: left;
+}
+div.tech-skills > ul.skills-list > li {
+  color: #00aef0;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27px;
+}
+div.tech-skills > ul.skills-list > li:hover {
+  color: #008ed0;
+  cursor: pointer;
+}
+pre#skill-example {
+  float: left;
+  color: #FFFFFF;
+}
+.space-holder {
+  clear: both;
+}
