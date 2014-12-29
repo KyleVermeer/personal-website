@@ -1,15 +1,26 @@
 <%- contentFor('body') %>
-<div class="main-content-panel">
-</div>
-<div class="main-content-panel">
-    <div class="right-panel-contents">
-        <div class="name">
-            <span class="first-name">KYLE</span>
-            <span class="last-name">VERMEER</span>
-        </div>
-        <div class="title">
-            <span class="title-line">software</span>
-            <span class="title-line">engineer</span>
+<div class="main-contents">
+    <div class="main-content-panel">
+        <div id="panel-contents">
+            <div class="name">
+                <span class="first-name">KYLE</span>
+                <span class="last-name">VERMEER</span>
+            </div>
+            <div class="title">
+                <span class="title-line">software</span>
+                <span class="title-line">engineer</span>
+            </div>
         </div>
     </div>
+    <div class="main-content-panel">
+    </div>
+    <div class="space-holder"></div>
 </div>
+
+<script type="text/javascript">
+    (function() {
+        document.getElementById("panel-contents").onclick = function() {
+            window.location = "/aboutMe";
+        };
+    })();
+</script>
