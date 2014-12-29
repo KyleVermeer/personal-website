@@ -8,6 +8,7 @@ span.intro-line {
   font-size: 25px;
   font-weight: 300;
   line-height: 35px;
+  display: block;
 }
 div.tech-skills {
   margin-top: 50px;
