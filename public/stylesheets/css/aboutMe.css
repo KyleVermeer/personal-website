@@ -39,6 +39,11 @@ pre#skill-example {
   float: left;
   color: #FFFFFF;
 }
+canvas#skills-canvas {
+  height: 200px;
+  width: 500px;
+  float: left;
+}
 .space-holder {
   clear: both;
 }

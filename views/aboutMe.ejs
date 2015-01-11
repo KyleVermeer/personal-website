@@ -22,6 +22,31 @@
             <li id="Python">- Python</li>
             <li id="C">- C</li>
         </ul>
+        <canvas id="skills-canvas" height="200" width="500">
+
+        </canvas>
         <div class="space-holder"></div>
     </div>
 </div>
+
+<script type="text/javascript" src="javascripts/codeCanvas.js"></script>
+<script type="text/javascript">
+    var codingCanvas = new CodeCanvas("skills-canvas", { "font-size" : 20, "font-family" : "monospace", "drawing-interval" : 75 });
+    $("#HTML").hover(function() {
+        var codeToDraw = "<html>\n  <head>\n    <title>I love you!</title>\n  </head>\n" +
+        "  <body>\n    This is HTML\n  </body>\n</html>";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
+    $("#CSS").hover(function() {
+        var codeToDraw = ".class {\n  color: #A3B627;\n}";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
+    $("#Javascript").hover(function() {
+        var codeToDraw = "var script = \"My Script\";\n" +
+                         "if (script.length > 5) {\n" +
+                         "  console.log(\"What a long script\");\n" +
+                         "};";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
+
+</script>
