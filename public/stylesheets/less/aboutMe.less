@@ -1,9 +1,6 @@
-@aboutMe-padding-sides: 50px;
 @aboutMe-padding-top: 100px;
 
 div.about-me {
-    padding-left: @aboutMe-padding-sides;
-    padding-right: @aboutMe-padding-sides;
     padding-top: @aboutMe-padding-top;
 }
 
@@ -26,12 +23,17 @@ div.tech-skills {
     margin-top: @tech-skills-margin-top;
 }
 
+div.skills-list-div {
+    display: inline-block;
+    float: left;
+}
+
 @tech-skills-span-font-color: #888888;
 @tech-skills-span-font-size: 22px;
 @tech-skills-span-font-weight: @intro-line-font-weight;
 @tech-skills-label-padding-bottom: 20px;
 
-div.tech-skills > span {
+.skills-list-label {
     color: @tech-skills-span-font-color;
     font-weight: @tech-skills-span-font-weight;
     font-size: @tech-skills-span-font-size;
@@ -41,15 +43,12 @@ div.tech-skills > span {
 
 @skills-list-font-color: #00aef0;
 @skills-list-margin-left: 50px;
-@skills-list-width: 400px;
 
-div.tech-skills > ul.skills-list {
+ul.skills-list {
     margin-left: @skills-list-margin-left;
-    width: @skills-list-width;
-    float: left;
 }
 
-div.tech-skills > ul.skills-list > li {
+ul.skills-list > li {
     color: @skills-list-font-color;
     font-size: @tech-skills-span-font-size;
     font-weight: @tech-skills-span-font-weight;
@@ -57,7 +56,8 @@ div.tech-skills > ul.skills-list > li {
 }
 
 @skills-list-font-color-hover: #008ed0;
-div.tech-skills > ul.skills-list > li:hover {
+
+span.skills-list-option:hover {
     color: @skills-list-font-color-hover;
     cursor: pointer;
 }
@@ -67,13 +67,10 @@ pre#skill-example {
     color: #FFFFFF;
 }
 
-@skills-canvas-width: 500px;
-@skills-canvas-height: 200px;
-
 canvas#skills-canvas {
-    height: @skills-canvas-height;
-    width: @skills-canvas-width;
     float: left;
+    margin-top: 40px;
+    margin-left: 50px;
 }
 
 .space-holder {

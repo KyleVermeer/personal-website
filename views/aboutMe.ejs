@@ -12,33 +12,45 @@
     <div id="personal-image">
     </div>
     <div class="tech-skills">
-        <span>My technical skills include:</span>
-        <ul class="skills-list">
-            <li id="HTML">- HTML</li>
-            <li id="CSS">- CSS</li>
-            <li id="Javascript">- Javascript</li>
-            <li id="Node.js">- Node.js</li>
-            <li id="Java">- Java</li>
-            <li id="Python">- Python</li>
-            <li id="C">- C</li>
-        </ul>
-        <canvas id="skills-canvas" height="200" width="500">
-
-        </canvas>
+        <div class="skills-list-div">
+            <span class="skills-list-label">My technical skills include:</span>
+            <ul class="skills-list">
+                <li><span id="HTML" class="skills-list-option">- HTML</span></li>
+                <li><span id="CSS" class="skills-list-option">- CSS</span></li>
+                <li><span id="Javascript" class="skills-list-option">- Javascript</span></li>
+                <li><span id="NodeJS" class="skills-list-option">- Node.js</span></li>
+                <li><span id="Java" class="skills-list-option">- Java</span></li>
+                <li><span id="Python" class="skills-list-option">- Python</span></li>
+                <li><span id="C" class="skills-list-option">- C</span></li>
+            </ul>
+        </div>
+        <canvas id="skills-canvas" height="200" width="550"></canvas>
         <div class="space-holder"></div>
     </div>
 </div>
 
 <script type="text/javascript" src="javascripts/codeCanvas.js"></script>
 <script type="text/javascript">
-    var codingCanvas = new CodeCanvas("skills-canvas", { "font-size" : 20, "font-family" : "monospace", "drawing-interval" : 75 });
+    var codingCanvas = new CodeCanvas("skills-canvas", { "font-size" : 18, "font-family" : "monospace", "drawing-interval" : 75 });
     $("#HTML").hover(function() {
-        var codeToDraw = "<html>\n  <head>\n    <title>I love you!</title>\n  </head>\n" +
-        "  <body>\n    This is HTML\n  </body>\n</html>";
+        var codeToDraw = "<html>\n" +
+                         "  <head>\n" +
+                         "    <title>Page title</title>\n" +
+                         "  </head>\n" +
+                         "  <body>\n" +
+                         "    This is HTML\n"+
+                         "  </body>\n" +
+                         "</html>";
         codingCanvas.draw(codeToDraw);
     }, function() {});
     $("#CSS").hover(function() {
-        var codeToDraw = ".class {\n  color: #A3B627;\n}";
+        var codeToDraw = ".class {\n" +
+                         "  color: #A3B627;\n" +
+                         "}\n" +
+                         "\n" +
+                         "#id {\n" +
+                         "  font-family: Lato;\n" +
+                         "}";
         codingCanvas.draw(codeToDraw);
     }, function() {});
     $("#Javascript").hover(function() {
@@ -48,5 +60,41 @@
                          "};";
         codingCanvas.draw(codeToDraw);
     }, function() {});
-
+    $("#NodeJS").hover(function() {
+        var codeToDraw = "var server = app.listen(8080, function () {\n" +
+                         "    var host = server.address().address;\n" +
+                         "    var port = server.address().port;\n" +
+                         "    console.log(\"I'm alive!\");\n" +
+                         "});";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
+    $("#Java").hover(function() {
+        var codeToDraw = "public class HelloWorld {\n" +
+                         "\n" +
+                         "    public static void main(String[] args) {\n" +
+                         "        System.out.println(\"Hello World!\");\n" +
+                         "    }\n" +
+                         "}";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
+    $("#Python").hover(function() {
+        var codeToDraw = "def getInputList():\n" +
+                         "  userInput = input(\"Enter integers: \")\n" +
+                         "  userStringList = userInput.split()\n" +
+                         "  integerList = []\n" +
+                         "  for element in userStringList:\n" +
+                         "    newElement = int(element)\n" +
+                         "    integerList.append(newElement)\n" +
+                         "  return integerList";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
+    $("#C").hover(function() {
+        var codeToDraw = "#include <stdio.h>\n" +
+                         "\n" +
+                         "int main() {\n" +
+                         "    printf(\"Hello world\\n\");\n" +
+                         "    return 0;\n" +
+                         "}\n";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
 </script>

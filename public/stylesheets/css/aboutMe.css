@@ -1,6 +1,4 @@
 div.about-me {
-  padding-left: 50px;
-  padding-right: 50px;
   padding-top: 100px;
 }
 span.intro-line {
@@ -13,25 +11,27 @@ span.intro-line {
 div.tech-skills {
   margin-top: 50px;
 }
-div.tech-skills > span {
+div.skills-list-div {
+  display: inline-block;
+  float: left;
+}
+.skills-list-label {
   color: #888888;
   font-weight: 300;
   font-size: 22px;
   display: block;
   padding-bottom: 20px;
 }
-div.tech-skills > ul.skills-list {
+ul.skills-list {
   margin-left: 50px;
-  width: 400px;
-  float: left;
 }
-div.tech-skills > ul.skills-list > li {
+ul.skills-list > li {
   color: #00aef0;
   font-size: 22px;
   font-weight: 300;
   line-height: 27px;
 }
-div.tech-skills > ul.skills-list > li:hover {
+span.skills-list-option:hover {
   color: #008ed0;
   cursor: pointer;
 }
@@ -40,9 +40,9 @@ pre#skill-example {
   color: #FFFFFF;
 }
 canvas#skills-canvas {
-  height: 200px;
-  width: 500px;
   float: left;
+  margin-top: 40px;
+  margin-left: 50px;
 }
 .space-holder {
   clear: both;

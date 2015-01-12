@@ -17,6 +17,9 @@ var CodeCanvas = function(canvasId, options) {
     var DEFAULT_FONT_COLOR = '#FFFFFF';
     var DEFAULT_FONT_FAMILY = "sans-serif";
     var DEFAULT_DRAWING_INTERVAL = 100;
+    var CODE_BUFFER_HEIGHT = 3;
+
+    this.codeBufferHeight = CODE_BUFFER_HEIGHT;
 
     /*
      * This function initializes parameters either from an options dict or with defaults
@@ -107,7 +110,7 @@ CodeCanvas.prototype.draw = function(textToWrite) {
     var drawCharacter = function() {
         var characterToDraw = self.textToWrite[self.currentCharacterIndex];
         if (characterToDraw == '\n') {
-            self.currentDrawPositionY += self.fontSize;
+            self.currentDrawPositionY += (self.fontSize + self.codeBufferHeight);
             self.currentDrawPositionX = 0;
             self.currentCharacterIndex++;
         }
