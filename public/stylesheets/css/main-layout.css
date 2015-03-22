@@ -22,19 +22,15 @@ a {
   height: 100%;
   weight: 100%;
 }
+/*@main-content-background-color: #1C1C1C;*/
 #main-content {
-  min-height: 650px;
-  background-color: #1c1c1c;
+  background-color: #121212;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
-}
-#main-content-writeable {
-  width: 850px;
-  margin: auto;
+  padding-bottom: 5%;
 }
 div.all-content {
   font-family: Lato, sans-seriff;
-  min-width: 900px;
 }
 nav {
   text-align: center;
@@ -52,6 +48,13 @@ nav li {
   color: #ffffff;
   font-size: 18px;
   font-weight: 300;
+}
+@media (max-width: 365px) {
+  nav li {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 10px;
+  }
 }
 nav li:hover {
   background-color: #333333;
@@ -85,8 +88,7 @@ div#signature > span.year {
   display: inline-block;
   float: right;
 }
-div.main-content {
-  min-height: 650px;
+div#main-content {
   width: 100%;
 }
 .space-holder {

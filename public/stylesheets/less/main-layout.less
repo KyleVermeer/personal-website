@@ -16,6 +16,7 @@ header {
 }
 
 @footer-height: 100px;
+@footer-margin-top: 5%;
 
 footer {
     min-height: @footer-height;
@@ -34,29 +35,24 @@ a {
     weight: 100%;
 }
 
-@main-content-height: 650px;
-@main-content-background-color: #1C1C1C;
+/*@main-content-background-color: #1C1C1C;*/
+@main-content-background-color: @black;
 @main-content-border-color: #333333;
+@main-content-padding-bottom: 5%;
 
 #main-content {
-    min-height: @main-content-height;
     background-color: @main-content-background-color;
     border-top: 1px solid @main-content-border-color;
     border-bottom: 1px solid @main-content-border-color;
+    padding-bottom: @main-content-padding-bottom;
 }
 
 @main-content-writeable-width: @all-content-min-width - 50;
-
-#main-content-writeable {
-    width: @main-content-writeable-width;
-    margin: auto;
-}
 
 @all-content-min-width: 900px;
 
 div.all-content {
     font-family: @page-font-family;
-    min-width: @all-content-min-width;
 }
 
 @nav-height: @header-height;
@@ -86,6 +82,14 @@ nav li {
     color: @nav-li-font-color;
     font-size: @nav-li-font-size;
     font-weight: @nav-li-font-weight;
+}
+
+@media (max-width: 365px) {
+    nav li {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+    }
 }
 
 @nav-li-hover-background-color: #333333;
@@ -139,8 +143,7 @@ div#signature > span.year {
     float: right;
 }
 
-div.main-content {
-    min-height: @main-content-height;
+div#main-content {
     width: 100%;
 }
 
