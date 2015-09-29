@@ -6,8 +6,10 @@ div.main-content-panel {
 }
 div.name {
   font-weight: 300;
-  font-size: 55px;
-  line-height: 60px;
+  font-size: 45px;
+  line-height: 50px;
+  margin-top: 5%;
+  text-align: center;
 }
 span.first-name {
   display: block;
@@ -20,30 +22,36 @@ span.last-name {
   color: #00aef0;
 }
 .title {
-  margin-top: 50px;
-  font-size: 33px;
+  margin-top: 10%;
+  font-size: 27px;
   font-weight: 300;
   color: #cccccc;
-  line-height: 36px;
+  line-height: 30px;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .title {
+    margin-top: 5%;
+  }
 }
 .title > span.title-line {
   display: block;
   clear: both;
 }
 #panel-contents {
-  margin-top: 150px;
+  margin-top: 5%;
   margin-right: 75px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   display: inline-block;
   float: right;
   transition: background-color 0.8s;
+  text-align: center;
 }
 #panel-contents:hover {
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
 }
-div#main-content {
-  background-image: url('/images/KVWebsite.jpg');
-  background-size: cover;
+img#background-image {
+  width: 100%;
 }

@@ -1,5 +1,7 @@
 div.about-me {
   padding-top: 100px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 span.intro-line {
   color: #00aef0;

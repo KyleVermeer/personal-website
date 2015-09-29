@@ -5,15 +5,17 @@ div.main-content-panel {
     height: 100%;
 }
 
-@name-margin-top: 150px;
+@name-margin-top: 5%;
 @name-font-weight: 300;
-@name-font-size: 55px;
+@name-font-size: 45px;
 @name-line-height: @name-font-size + 5;
 
 div.name {
     font-weight: @name-font-weight;
     font-size: @name-font-size;
     line-height: @name-line-height;
+    margin-top: @name-margin-top;
+    text-align: center;
 }
 
 @first-name-color: #FFFFFF;
@@ -32,7 +34,7 @@ span.last-name {
     color: @last-name-color;
 }
 
-@title-margin-top: 50px;
+@title-margin-top: 10%;
 @title-font-size: @name-font-size * (3/5);
 @title-line-height: @title-font-size + 3;
 @title-font-color: #CCCCCC;
@@ -44,6 +46,13 @@ span.last-name {
     font-weight: @title-font-weight;
     color: @title-font-color;
     line-height: @title-line-height;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .title {
+        margin-top: 5%;
+    }
 }
 
 .title > span.title-line {
@@ -64,6 +73,7 @@ span.last-name {
     display: inline-block;
     float: right;
     transition: background-color .8s;
+    text-align: center;
 }
 
 @panel-contents-hover-background-color: rgba(0,0,0,0.9);
@@ -73,7 +83,6 @@ span.last-name {
     cursor: pointer;
 }
 
-div#main-content {
-    background-image: url('/images/KVWebsite.jpg');
-    background-size: cover;
+img#background-image {
+    width: 100%;
 }

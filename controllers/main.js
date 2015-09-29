@@ -1,7 +1,7 @@
 var MILLISECONDS_IN_YEAR = 1000 * 60 * 60 * 24 * 365;
 
 module.exports.index = function(req, res) {
-    res.render('index', { title: 'KV' } );
+    res.render('index', { title: 'Kyle Vermeer Personal Site' } );
 }
 
 module.exports.contact = function(req, res) {
