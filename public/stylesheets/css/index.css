@@ -11,6 +11,15 @@ div.name {
   margin-top: 5%;
   text-align: center;
 }
+div#intro-panel {
+  width: 100%;
+  min-height: 550px;
+  background: url(/images/KVWebsite.jpg) no-repeat center center local;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 span.first-name {
   display: block;
   clear: both;
