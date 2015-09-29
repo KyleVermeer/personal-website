@@ -64,3 +64,9 @@ span.last-name {
 img#background-image {
   width: 100%;
 }
+/* Mobile */
+@media (max-width: 667px) {
+  div#intro-panel {
+    min-height: 300px;
+  }
+}

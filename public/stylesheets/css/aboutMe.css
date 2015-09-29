@@ -58,3 +58,15 @@ canvas#skills-canvas {
 .space-holder {
   clear: both;
 }
+/* Mobile */
+@media (max-width: 667px) {
+  canvas#skills-canvas {
+    display: none;
+  }
+  div.about-me > p {
+    text-align: center;
+  }
+  div.about-me {
+    padding-top: 25px;
+  }
+}

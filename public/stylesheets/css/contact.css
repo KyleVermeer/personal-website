@@ -14,3 +14,12 @@ div.contact-info {
   padding-left: 50px;
   padding-top: 100px;
 }
+/* Mobile */
+@media (max-width: 667px) {
+  div.contact-info {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}
