@@ -2,19 +2,30 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/css/aboutMe.css"/>
 <%- contentFor('body') %>
 <div class="about-me">
-    <span class="intro-line">
-        My name is Kyle Manuel Gonzalez Vermeer.
-    </span>
-    <span class="intro-line">
-        I am a <%= yearsOld %> year old software engineer
-        from Mountain View, CA.
-    </span>
+    <p>
+        My name is <span class="on-text">Kyle Vermeer</span>.
+    </p>
+    <p>
+        I am a <%= yearsOld %> year old <span class="on-text">software engineer</span> at
+        <a href="https://www.box.com/careers" class="on-text">Box</a>.
+    </p>
+    <p>
+        I have worked extensively on internal business systems, building tools to support our sales, marketing, and
+        business development teams.
+        This has built an expertise on the
+        <a href="https://developer.salesforce.com/page/Apex" class="on-text">Salesforce (Force.com) platform</a>.
+    </p>
+    <p>
+        I have also been fortunate enough to <span class="on-text">lead a team</span> of the most strikingly intelligent business systems
+        engineers in the Valley.  I manage a team of 4 engineers in the quest to deliver superb business tools.
+    </p>
     <div id="personal-image">
     </div>
     <div class="tech-skills">
         <div class="skills-list-div">
             <span class="skills-list-label">My technical skills include:</span>
             <ul class="skills-list">
+                <li><span id="Apex" class="skills-list-option">- Apex</span></li>
                 <li><span id="HTML" class="skills-list-option">- HTML</span></li>
                 <li><span id="CSS" class="skills-list-option">- CSS</span></li>
                 <li><span id="Javascript" class="skills-list-option">- Javascript</span></li>
@@ -32,6 +43,15 @@
 <script type="text/javascript" src="javascripts/codeCanvas.js"></script>
 <script type="text/javascript">
     var codingCanvas = new CodeCanvas("skills-canvas", { "font-size" : 18, "font-family" : "monospace", "drawing-interval" : 75 });
+    $("#Apex").hover(function() {
+        var codeToDraw = "trigger AccountTrigger on Account {\n" +
+                         "\n" +
+                         "  if (Trigger.isBefore && Trigger.isInsert) {\n" +
+                         "    TriggerHandler.beforeInsert(Trigger.new);\n" +
+                         "  }\n" +
+                         "}";
+        codingCanvas.draw(codeToDraw);
+    }, function() {})
     $("#HTML").hover(function() {
         var codeToDraw = "<html>\n" +
                          "  <head>\n" +

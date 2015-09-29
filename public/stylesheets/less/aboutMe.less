@@ -1,3 +1,14 @@
+@font-color-off: #888888;
+@font-color-on: #00aef0;
+
+.off-text {
+    color: #888888;
+}
+
+.on-text {
+    color: #00aef0;
+}
+
 @aboutMe-padding-top: 100px;
 @aboutMe-padding-left-right: 3%;
 
@@ -7,17 +18,20 @@ div.about-me {
     padding-right: @aboutMe-padding-left-right;
 }
 
-@intro-line-media-font-color: #00aef0;
-@intro-line-media-font-size: 25px;
-@intro-line-font-weight: 300;
-@intro-line-line-height: 35px;
+@about-me-font-size-paragraph: 25px;
+@about-me-font-weight-paragraph: 300;
+@about-me-line-height-paragraph: 1.4;
 
-span.intro-line {
-    color: @intro-line-media-font-color;
-    font-size: @intro-line-media-font-size;
-    font-weight: @intro-line-font-weight;
-    line-height: @intro-line-line-height;
-    display: block;
+div.about-me > p {
+    color: @font-color-off;
+    font-size: @about-me-font-size-paragraph;
+    font-weight: @about-me-font-weight-paragraph;
+    line-height: @about-me-line-height-paragraph;
+    margin-top: 30px;
+}
+
+div.about-me > p:first-of-type {
+    margin-top: 0px;
 }
 
 @tech-skills-margin-top: 50px;
@@ -33,12 +47,11 @@ div.skills-list-div {
 
 @tech-skills-span-font-color: #888888;
 @tech-skills-span-font-size: 22px;
-@tech-skills-span-font-weight: @intro-line-font-weight;
 @tech-skills-label-padding-bottom: 20px;
 
 .skills-list-label {
     color: @tech-skills-span-font-color;
-    font-weight: @tech-skills-span-font-weight;
+    font-weight: @about-me-font-weight-paragraph;
     font-size: @tech-skills-span-font-size;
     display: block;
     padding-bottom: @tech-skills-label-padding-bottom;
@@ -54,7 +67,7 @@ ul.skills-list {
 ul.skills-list > li {
     color: @skills-list-font-color;
     font-size: @tech-skills-span-font-size;
-    font-weight: @tech-skills-span-font-weight;
+    font-weight: @about-me-font-weight-paragraph;
     line-height: @tech-skills-span-font-size + 5px;
 }
 

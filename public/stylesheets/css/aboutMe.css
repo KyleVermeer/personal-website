@@ -1,14 +1,23 @@
+.off-text {
+  color: #888888;
+}
+.on-text {
+  color: #00aef0;
+}
 div.about-me {
   padding-top: 100px;
   padding-left: 3%;
   padding-right: 3%;
 }
-span.intro-line {
-  color: #00aef0;
+div.about-me > p {
+  color: #888888;
   font-size: 25px;
   font-weight: 300;
-  line-height: 35px;
-  display: block;
+  line-height: 1.4;
+  margin-top: 30px;
+}
+div.about-me > p:first-of-type {
+  margin-top: 0px;
 }
 div.tech-skills {
   margin-top: 50px;
