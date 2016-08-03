@@ -11,9 +11,26 @@ span.contact-email {
   font-weight: 300;
 }
 div.contact-info {
-  padding-left: 50px;
-  padding-top: 100px;
+  background-color: #FFF;
 }
+
+.panel {
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;;
+  padding-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.panel h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 /* Mobile */
 @media (max-width: 667px) {
   div.contact-info {
