@@ -1,8 +1,27 @@
 span.coming-soon-message {
-  margin-left: 50px;
-  margin-top: 75px;
   color: #00aef0;
   font-size: 30px;
   font-weight: 300;
-  display: block;
+}
+
+.projects {
+  color: #000;
+  background-color: #FFF;
+}
+
+.panel {
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;;
+  padding-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.panel h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
