@@ -1,21 +1,24 @@
-.off-text {
-  color: #888888;
-}
 .on-text {
-  color: #00aef0;
+  color: #3B5998;
+  font-weight: 500;
 }
+
 div.about-me {
+  background-color: #00aef0;
   padding-top: 100px;
   padding-left: 3%;
   padding-right: 3%;
+  padding-bottom: 30px;
 }
+
 div.about-me > p {
-  color: #888888;
+  color: #FFF;
   font-size: 25px;
   font-weight: 300;
   line-height: 1.4;
   margin-top: 30px;
 }
+
 div.about-me > p:first-of-type {
   margin-top: 0px;
 }
@@ -27,7 +30,7 @@ div.skills-list-div {
   float: left;
 }
 .skills-list-label {
-  color: #888888;
+  color: #FFF;
   font-weight: 300;
   font-size: 22px;
   display: block;
@@ -37,7 +40,7 @@ ul.skills-list {
   margin-left: 50px;
 }
 ul.skills-list > li {
-  color: #00aef0;
+  color: #FFF;
   font-size: 22px;
   font-weight: 300;
   line-height: 27px;

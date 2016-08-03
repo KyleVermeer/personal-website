@@ -10,14 +10,17 @@
         <a href="https://www.box.com/careers" class="on-text">Box</a>.
     </p>
     <p>
-        I have worked extensively on internal business systems, building tools to support our sales, marketing, and
+        I currently work on the Accounts and Online Sales Engineering team at Box.  Our team is in charge of all the revenue generating flows in the web-app.  We develop primarily in PHP, HTML, and Javascript.
+    </p>
+    <p>
+        Previously, I worked extensively on internal business systems, building tools to support our sales, marketing, and
         business development teams.
         This has built an expertise on the
         <a href="https://developer.salesforce.com/page/Apex" class="on-text">Salesforce (Force.com) platform</a>.
     </p>
     <p>
-        I have also been fortunate enough to <span class="on-text">lead a team</span> of the most strikingly intelligent business systems
-        engineers in the Valley.  I manage a team of 4 engineers in the quest to deliver superb business tools.
+        I have also was fortunate enough to <span class="on-text">lead a team</span> of the most strikingly intelligent business systems
+        engineers in the Valley.  I managed a team of 4 engineers in the quest to deliver superb business tools.
     </p>
     <div id="personal-image">
     </div>
@@ -25,6 +28,7 @@
         <div class="skills-list-div">
             <span class="skills-list-label">My technical skills include:</span>
             <ul class="skills-list">
+                <li><span id="PHP" class="skills-list-option">- PHP</span></li>
                 <li><span id="Apex" class="skills-list-option">- Apex</span></li>
                 <li><span id="HTML" class="skills-list-option">- HTML</span></li>
                 <li><span id="CSS" class="skills-list-option">- CSS</span></li>
@@ -43,6 +47,13 @@
 <script type="text/javascript" src="javascripts/codeCanvas.js"></script>
 <script type="text/javascript">
     var codingCanvas = new CodeCanvas("skills-canvas", { "font-size" : 18, "font-family" : "monospace", "drawing-interval" : 75 });
+    $("#PHP").hover(function() {
+        var codeToDraw = "public function helloWorld() {\n" +
+                         "  $text = \"Hello\" . \"World\";\n" +
+                         "  return $text;\n" +
+                         "}";
+        codingCanvas.draw(codeToDraw);
+    }, function() {});
     $("#Apex").hover(function() {
         var codeToDraw = "trigger AccountTrigger on Account {\n" +
                          "\n" +
