@@ -9,7 +9,7 @@ module.exports.contact = function(req, res) {
 }
 
 module.exports.aboutMe = function(req, res) {
-    var birthday = new Date(1991, 3, 2);
+    var birthday = new Date(1991, 4, 2);
     var now = Date.now();
     var elapsedTime = now - birthday;
     var yearsOld = Math.floor(elapsedTime / MILLISECONDS_IN_YEAR);
