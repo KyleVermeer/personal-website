@@ -5,14 +5,10 @@
 
 div.about-me {
   background-color: #00aef0;
-  padding-top: 100px;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 30px;
+  color: #FFF;
 }
 
 div.about-me > p {
-  color: #FFF;
   font-size: 25px;
   font-weight: 300;
   line-height: 1.4;
@@ -22,6 +18,7 @@ div.about-me > p {
 div.about-me > p:first-of-type {
   margin-top: 0px;
 }
+
 div.tech-skills {
   margin-top: 50px;
 }
@@ -30,37 +27,57 @@ div.skills-list-div {
   float: left;
 }
 .skills-list-label {
-  color: #FFF;
-  font-weight: 300;
-  font-size: 22px;
   display: block;
   padding-bottom: 20px;
 }
+
 ul.skills-list {
   margin-left: 50px;
 }
+
 ul.skills-list > li {
-  color: #FFF;
-  font-size: 22px;
   font-weight: 300;
-  line-height: 27px;
+  line-height: 1.2;
 }
 span.skills-list-option:hover {
   color: #008ed0;
   cursor: pointer;
 }
-pre#skill-example {
-  float: left;
-  color: #FFFFFF;
-}
+
 canvas#skills-canvas {
   float: left;
   margin-top: 40px;
   margin-left: 50px;
 }
+
 .space-holder {
   clear: both;
 }
+
+.panel {
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;;
+  padding-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.panel h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.technical-skills-container {
+  background-color: #FFF;
+  color: #000;
+  font-size: 25px;
+  font-weight: 300;
+}
+
 /* Mobile */
 @media (max-width: 667px) {
   canvas#skills-canvas {

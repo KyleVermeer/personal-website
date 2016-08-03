@@ -14,7 +14,7 @@ var CodeCanvas = function(canvasId, options) {
 
     var DEFAULT_FONT_SIZE = 15;
     var DEFAULT_FONT_WEIGHT = 300;
-    var DEFAULT_FONT_COLOR = '#FFFFFF';
+    var DEFAULT_FONT_COLOR = '#000';
     var DEFAULT_FONT_FAMILY = "sans-serif";
     var DEFAULT_DRAWING_INTERVAL = 100;
     var CODE_BUFFER_HEIGHT = 3;
